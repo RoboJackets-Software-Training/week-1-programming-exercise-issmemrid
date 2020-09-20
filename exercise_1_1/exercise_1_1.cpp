@@ -9,7 +9,7 @@ int main() {
     std::vector<float> wheel_speeds(4);
 
     // Write your code for step 2 here
-    for(int i=0; i<wheel_speeds.lenth(); i++)
+    for(int i=0; i<4; i++)
     {
     	wheel_speeds[i] = 0;
     }
@@ -24,15 +24,15 @@ int main() {
         if(direction=='e')
         {
         	keep_going = false;
-        	for(int i=0; i<wheel_speeds.lenth(); i++)
+        	for(int i=0; i<4; i++)
     		{
     			wheel_speeds[i] = 0;
     		}
-    		std::cout<<"Shutting Down"<<std:endl;
+    		std::cout<<"Shutting Down"<<std::endl;
         }
         else if(direction == 'w')
         {
-			for(int i=0; i<wheel_speeds.lenth(); i++)
+			for(int i=0; 4; i++)
     		{
     			wheel_speeds[i] = 1;
     		}
@@ -46,7 +46,7 @@ int main() {
         } 
         else if(direction == 's')
         {
-        	for(int i=0; i<wheel_speeds.lenth(); i++)
+        	for(int i=0; 4; i++)
     		{
     			wheel_speeds[i] = -1;
     		}
@@ -62,7 +62,7 @@ int main() {
         {
         	std::cout<<"Sorry, I didn't get that. Try again."<<std::endl;
         }
-        for(int i=0; i<wheel_speeds.lenth(); i++)
+        for(int i=0; i<4; i++)
     	{
     		std::cout<<"Wheel at index "<<i<<"has speed "<<wheel_speeds[i];
     	}
