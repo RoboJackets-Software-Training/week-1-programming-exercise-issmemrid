@@ -24,7 +24,17 @@ int main()
 
     // Reverse Vector
     // WRITE YOUR VECTOR REVERSAL HERE
-
+    int start = 0;
+    int end = list.size()-1;
+    int t;
+    while(start<end)
+    {
+    	start++;
+    	end--;
+    	t = list[start];
+    	list[start] = list[end];
+    	list[end] = t;
+    }
     // Print the Reversed vector
     std::cout << "Reversed Vector: ";
     for (int v : list)
